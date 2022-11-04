@@ -2,12 +2,18 @@
 
 {% block title %} Home Page {% endblock %}
 {% block content %}
-  <div class="weather">
+<main>
+  <div class="weather_location">
     <h2 class="city">Weather in Stockholm</h2>
-    <h1 class="temp">51°C</h1>
+    <h1 class="date">Thrusday 4 November 2022</h1>
+  </div>
+  <div class="current">
+    <h1 class="temp">15<span>°C</span></h1>
     <img src="" alt="" class="icon" />
-    <div class="description">Cloudy</div>
+    <div class="weather">Sunny</div>
     <div class="huminity">Huminity: 60%</div>
     <div class="wind">Wind speed: 6.2 km/h</div>
+    <div class="hi-low">13°C / 16°C</div>
   </div>
+</main>
 {% endblock %}

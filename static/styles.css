@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   display: flex;
   justify-content: center;
@@ -7,22 +12,28 @@ body {
   font-family: 'Open Sans', sans-serif;
   background: #000;
   background-image: url('https://source.unsplash.com/1600x900/?landscape');
+  background-size: cover;
+  background-position: top center;
   font-size: 120%;
+  text-align: center;
 }
 .card {
-  background: rgb(4, 50, 114);
-  color: white;
-  padding: 2em;
+  background-image: url('/static/images/benaja.jpg');
   border-radius: 30px;
-  width: 100%;
-  max-width: 420px;
-  margin: 1em;
+  background-size: cover ;
+  background-position: to center;
+  width: 40%;
+  height: 65%;
+  border: none;
+  text-shadow: white 0px 0px 2px;
+  font-size: 16px;
 }
 
 .search {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 50px 15px 15px;
 }
 button {
   margin: 0.1em;
@@ -31,9 +42,10 @@ button {
   height: 43px;
   width: 43px;
   outline: none;
-  background: #7c7c7c2b;
+  background: rgba(255,255,255, 0.5);
   color: white;
   cursor: pointer;
+  padding: 1em;
   transition: 0.2s ease-in-out;
 }
 
@@ -41,17 +53,76 @@ input.search-bar {
   border: none;
   outline: none;
   padding: 0.5em 1em;
-  border-radius: 25px;
-  background: #7c7c7c4b;
-  color: white;
+  border-radius: 16px 0px 16px 0px;
+  background: rgba(255,255,255, 0.3);
+  background-color: rgba(255, 255, 255, 0.6);
+  color: #313131;
   font-family: inherit;
-  font-size: 105%;
+  font-size: 20px;
   width: calc(100% - 100px);
+  
 }
 
 button:hover{
-  background: #07bc3a8b;
+  background: #c730198b;
 }
 h1.temp {
   margin: 0;
+}
+.weather_location {
+  flex: 1 1 100%;
+  padding: 25px 25px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.weather_location .city {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.weather_location .date {
+  color: #FFF;
+  font-size: 16px;
+}
+.current .temp {
+  color: #FFF;
+  font-size: 102px;
+  font-weight: 900;
+  margin: 30px 0px;
+  text-shadow: 2px 10px rgba(218, 224, 147, 0.2);
+}
+
+.current .weather {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 700;
+  font-style: italic;
+  margin-bottom: 15px;
+  text-shadow: 0px 4px rgba(218, 224, 147, 0.7);
+}
+
+.current .huminity {
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 500;
+  margin: 20px 0px;
+  
+}
+
+.current .wind {
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 500;
+  margin: 20px 0px;
+}
+.current .hi-low {
+  color: #FFF;
+  font-size: 30px;
+  font-weight: 500;
+  margin: 30px 0px;
 }
